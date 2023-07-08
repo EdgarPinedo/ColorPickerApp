@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Icons\app-icon.png" />
+    <None Remove="Icons\close.png" />
+    <None Remove="Icons\copy.png" />
+    <None Remove="Icons\minimize.png" />
+    <None Remove="Icons\pick-color.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Icons\app-icon.png" />
+    <Resource Include="Icons\close.png" />
+    <Resource Include="Icons\copy.png" />
+    <Resource Include="Icons\minimize.png" />
+    <Resource Include="Icons\pick-color.png" />
+  </ItemGroup>
+
+</Project>
